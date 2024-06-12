@@ -4,7 +4,9 @@ import { BANNER } from "./commands/banner";
 import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
-import { createWhoami } from "./commands/whoami";
+import { CONTRIBUTIONS } from "./commands/contributions";
+import { ACHIEVEMENTS } from './commands/achievements';
+
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -28,10 +30,12 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects","repo", "banner", "clear" , "contributions","achievements"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
+
+
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -39,6 +43,7 @@ const scrollToBottom = () => {
 
   MAIN.scrollTop = MAIN.scrollHeight;
 }
+
 
 function userInputHandler(e : KeyboardEvent) {
   const key = e.key;
@@ -187,11 +192,12 @@ function commandHandler(input : string) {
         TERMINAL.innerHTML = "";
         TERMINAL.appendChild(WRITELINESCOPY);
         mutWriteLines = WRITELINESCOPY;
+        writeLines(BANNER);
       })
       break;
     case 'banner':
       if(bareMode) {
-        writeLines(["WebShell v1.0.0", "<br>"])
+        writeLines(["Terfolio v1.1.0", "<br>"])
         break;
       }
       writeLines(BANNER);
@@ -202,13 +208,6 @@ function commandHandler(input : string) {
         break;
       }
       writeLines(HELP);
-      break;
-    case 'whoami':      
-      if(bareMode) {
-        writeLines([`${command.username}`, "<br>"])
-        break;
-      }
-      writeLines(createWhoami());
       break;
     case 'about':
       if(bareMode) {
@@ -230,10 +229,19 @@ function commandHandler(input : string) {
         window.open(REPO_LINK, '_blank');
       }, 500);
       break;
-    case 'linkedin':
-      //add stuff here
+    case 'contributions':
+      if(bareMode) {
+        writeLines(["I don't want you to break the project contributions.", "<br>"])
+        break;
+      }
+      writeLines(CONTRIBUTIONS);
       break;
-    case 'github':
+    case 'achievements':
+      if(bareMode) {
+        writeLines(["I don't want you to break the other achievements that have been listed", "<br>"])
+        break;
+      }
+      writeLines(ACHIEVEMENTS);
       //add stuff here
       break;
     case 'email':
@@ -387,6 +395,7 @@ const initEventListeners = () => {
   } 
 
     window.addEventListener('load', () => {
+      updateBar1Text();
     writeLines(BANNER);
   });
   
@@ -399,6 +408,14 @@ const initEventListeners = () => {
   });
 
   console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
+}
+
+//to change the bar1 content.
+function updateBar1Text(){
+  const bar1 = document.getElementById("bar-1");
+ if(bar1){
+  bar1.innerText = "Terfolio v1.1.0";
+ }
 }
 
 initEventListeners();

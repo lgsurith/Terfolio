@@ -1,56 +1,108 @@
 {
   "ascii": [
-    "███████╗██╗  ██╗███████╗██╗     ██╗",
-    "██╔════╝██║  ██║██╔════╝██║     ██║",
-    "███████╗███████║█████╗  ██║     ██║",
-    "╚════██║██╔══██║██╔══╝  ██║     ██║",
-    "███████║██║  ██║███████╗███████╗███████╗",
-    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+    "███████╗ ██╗   ██╗ ██████╗  ██╗████████╗██╗  ██╗",
+    "██╔════╝ ██║   ██║ ██╔══██╗ ██║╚══██╔══╝██║  ██║",
+    "███████╗ ██║   ██║ ██████╔╝ ██║   ██║   ███████║",
+    "╚════██║ ██║   ██║ ██╔══██╗ ██║   ██║   ██╔══██║",
+    "███████║ ╚██████╔╝ ██║  ██║ ██║   ██║   ██║  ██║",
+    "╚══════╝   ╚═════  ╚═╝  ╚═╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝"
   ],
   "title": "WebShell",
-  "username": "visitor",
-  "hostname": "webshell",
-  "password": "050823",
-  "repoLink": "https://github.com/nasan016/webshell",
+  "username": "guest",
+  "hostname": "surith.dev",
+  "password": "69420",
+  "repoLink": "https://github.com/lgsurith/Terfolio",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "surithcodes204@gmail.com",
+    "github": "lgsurith",
+    "linkedin": "surithlg"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
+  "aboutGreeting": "Hello there! I'm Surith, currently an undergrad at VIT Chennai pursuing Electronics and Computer Science",
   "projects": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
+      "Brock Bot",
+      "A Telegram Bot about Brock Fine tuned with the help of Gemini 1.5 pro",
+      "https://github.com/lgsurith/Brock_v1-Bot"
     ],
     [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "Gemini Chatbot",
+      "A Chatbot that can be used to interact with the Gemini 1.5 Pro",
+      "https://github.com/lgsurith/Gemini_Web_UI"
+    ],
+    [
+      "Node Mini Projects",
+      "A collection of Mini Projects using Node.js",
+      "https://github.com/lgsurith/Node-Mini-Projects"
+    ],
+    [
+      "Gesture Volume Control",
+      "A simple Gesture Volume Control using OpenCV and Python",
+      "https://github.com/lgsurith/Open_CV-Mini-Projects/tree/main/Gesture-Volume-Control"
+    
+    ],
+    [
+      "Bank Management System",
+      "A simple Bank Management System built using C++",
+      "https://github.com/lgsurith/Bank-Management"
+    ]
+  ],
+  "contributions": [
+    [
+      "Sahaya",
+      "Gemini and API integration on the backend",
+      "https://github.com/sr2echa/sahaya/"
+    ],
+    [
+      "Valt",
+      "API integration and Backend Development",
+      "https://github.com/sr2echa/valt"
+    ],
+    [
+      "Dirty Money Detector",
+      "Flask Intergation and Backend Development",
+      "https://github.com/sr2echa/DMD"
+    ]
+  ],
+  "achievements" : [
+    [
+      "Reva Hack'23 (MLH Event)",
+      "Emerged as Title Winners from a 36 hour hackathon"
+    ],
+    [
+      "Synthetix '24",
+      "Electrical Domain Winner - innovated a problem statement for the event with the help of teammates"
+    ],
+    [
+      "IEEE YESIST'24",
+      "World Finalists based on the product Sahaya - a platform for disaster management and relief operations"
+    ],
+    [
+      "Deans List",
+      "5th Rank in the Department of Electronics and Computer Science for the year '23 ,'24" 
     ]
   ],
   "colors": {
-    "background": "#0C0623",
+    "background": "#000000",
     "foreground": "#F8DDE5",
-    "banner": "#FF9951",
+    "banner": "#F99245",
     "border": {
       "visible": true,
-      "color": "#FFADE2"
+      "color": "#DA782B"
     },
     "prompt": {
       "default": "#A5A7A7",
-      "user": "#FE6BC9",
-      "host": "#70FDFF",
-      "input": "#FF7685"
+      "user": "#BB5E0E",
+      "host": "#3399FF",
+      "input": "#9C4600"
     },
     "link": {
-      "text": "#B6AAEE",
-      "highlightColor": "#FFADE2",
-      "highlightText": "#0C0623"
+      "text": "#ff69b4",
+      "highlightColor": "#FFF700",
+      "highlightText": "#00008B",
+      "highlightStyle" : "bold"
     },
     "commands": {
-      "textColor": "#FD9BDB"
+      "textColor": "#3399FF"
     }
   }
 }

@@ -2,30 +2,34 @@ const helpObj = {
   "commands": [
     [
     "'about'",
-    "Who made this website?",
+    "Curious about the creator ?",
     ],
     [
       "'projects'",
       "Maybe there's something interesting."
     ],
     [
-      "'whoami'",
-      "A perplexing question."
+      "'contributions'",
+      "Display My Contributions "
     ],
     ["'sudo'",
-      "???"
+      "Gain ultimate power... and responsibility. Use wisely 🧙‍♂️"
+    ],
+    [
+      "'achievements'",
+      "Discover my Achievements "
     ],
     [
       "'repo'",
-      "View the Github Repository."
+      "View the Github Repository "
     ],
     ["'banner'",
-      "Display the banner."
+      "Display the banner"
     ],
     [
       "'clear'",
-      "Clear the terminal."
-    ]
+      "Clear the terminal "
+    ],
   ],
 }
 

@@ -15,7 +15,7 @@ const createAbout = () : string[] => {
   let string = "";
 
   about.push("<br>");
-  about.push(command.aboutGreeting);
+  about.push(`<p>${command.aboutGreeting}</p>`);
   about.push("<br>");
   string += SPACE.repeat(2);
   string += email;

@@ -207,3 +207,23 @@ a:hover {
     margin-left: 8px;
   }
 }
+ 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+#cursor{
+  display: inline-block;
+  font-size : 18px;
+  color : orangered;
+  background-color: var(--prompt-default);
+}
